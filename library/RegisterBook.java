@@ -13,8 +13,7 @@ public class RegisterBook {
 		book.name = "Coraline";
 		book.description = "Livro 1";
 		book.isbn = "878-55-66250-45-5";
-		book.price = 79.90;
-		
+		book.setPrice(79.90);
 		book.author = author;
 		
 		book.detailsBook();
@@ -23,8 +22,7 @@ public class RegisterBook {
 		book2.name = "Sandman";
 		book2.description = "Livro 2";
 		book2.isbn = "878-55-66250-45-7";
-		book2.price = 87.00;
-		
+		book2.setPrice(87.00);
 		book2.author = author;
 		
 		book2.detailsBook();

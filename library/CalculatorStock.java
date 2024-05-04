@@ -4,9 +4,6 @@ public class CalculatorStock {
 	
 	public static void main(String[] args) {
 		
-		//double bookTestInJava8 = 49.90; 
-		//double bookTDD = 79.80;
-		
 		double total = 0;
 		
 		for (double i = 0; i < 50; i++) {
