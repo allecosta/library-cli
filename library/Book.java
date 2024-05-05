@@ -2,14 +2,58 @@ package library;
 
 public class Book {
 	
-	String name, description, isbn;
+	private String name, description, isbn;
 	private double price;
-	Author author;
+	private Author author;
+	private boolean printed;
 	
-	//public Book() {
-		//System.out.println("Novo livro criado com sucesso!");
-	//}
+	public Book(Author author) {
+		this.author = author;
+		this.isbn = "000-00-00000-00-0";
+		this.printed = true;
+	}
 	
+	public double getPrice() {
+		return price;
+	}
+	
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+
+	public Author getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(Author author) {
+		this.author = author;
+	}
+
 	void detailsBook() {
 		System.out.println("\n\tDETALHES DO LIVRO:");
 		System.out.println("Nome: " + name);
@@ -28,18 +72,10 @@ public class Book {
 		return this.author != null;
 	}
 	
-	void setPrice(double price) {
-		this.price = price;
-	}
-	
-	double getPrice() {
-		return price;
-	}
-	
 	public boolean applyDiscount(double percentage) {
 		if (percentage > 0.3) {
 			return false;
-		}
+		} 
 		
 		this.price -= this.price * percentage;
 		

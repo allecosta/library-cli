@@ -4,8 +4,7 @@ public class RulesDiscount {
 	
 	public static void main(String[] args) {
 		
-		Book book = new Book();
-		book.setPrice(79.80);
+		Book book = new Book()
 		
 		System.out.println("Preço atual: " + book.getPrice());
 		
