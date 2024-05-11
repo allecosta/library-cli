@@ -16,5 +16,15 @@ public class Ebook extends Book {
 		this.waterMark = waterMark;
 	}
 	
-	
+	@Override
+	public boolean applyDiscount(double percentage) {
+		if (percentage > 0.15) {
+			return false;
+		}
+		
+		//double discount = this.getPrice() * percentage;
+		//this.setPrice(this.getPrice() - discount);
+		
+		return super.applyDiscount(percentage);
+	}	
 }

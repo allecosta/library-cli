@@ -26,7 +26,5 @@ public class RegisterBook {
 		book2.setAuthor(author);
 		
 		book2.detailsBook();
-		
 	}
-
 }
