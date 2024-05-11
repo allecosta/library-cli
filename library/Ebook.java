@@ -22,9 +22,6 @@ public class Ebook extends Book {
 			return false;
 		}
 		
-		//double discount = this.getPrice() * percentage;
-		//this.setPrice(this.getPrice() - discount);
-		
 		return super.applyDiscount(percentage);
 	}	
 }
