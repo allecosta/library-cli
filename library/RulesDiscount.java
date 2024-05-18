@@ -7,8 +7,8 @@ public class RulesDiscount {
 		Author author = new Author();
 		author.setName("Neil Gaiman");
 		
-		Book book = new Book(author);
-		book.setPrice(75.80);
+		Book book = new LittleBook(author);
+		book.setPrice(25.80);
 		
 		if (!book.applyDiscount(0.3)) {
 			System.out.println("Desconto no livro não pode ser maior que 30%");
@@ -22,7 +22,7 @@ public class RulesDiscount {
 		if (!ebook.applyDiscount(0.15)) {
 			System.out.println("Desconto no ebook não pode ser maior que 15%");
 		} else {
-			System.out.println("Valor do ebook con desconto: " + ebook.getPrice());
+			System.out.println("Valor do ebook com desconto: " + ebook.getPrice());
 		}
 	}
 

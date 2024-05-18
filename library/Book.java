@@ -1,6 +1,6 @@
 package library;
 
-public class Book {
+public abstract class Book {
 	
 	private String name, description, isbn;
 	private double price;
@@ -77,8 +77,9 @@ public class Book {
 			return false;
 		} 
 		
+		System.out.println("Aplicando desconto Livro!");
 		this.price -= this.price * percentage;
 		
-		return true;
+		return false;
 	}
 }
