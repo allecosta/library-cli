@@ -1,17 +1,19 @@
 package library;
 
-public abstract class Book {
+public abstract class Book implements Product {
 	
 	private String name, description, isbn;
 	private double price;
 	private Author author;
-	private boolean printed;
+	//private boolean printed;
 	
 	public Book(Author author) {
 		this.author = author;
 		this.isbn = "000-00-00000-00-0";
-		this.printed = true;
+		//this.printed = true;
 	}
+	
+	public abstract boolean applyDiscount(double percentage);
 	
 	public double getPrice() {
 		return price;
@@ -70,16 +72,5 @@ public abstract class Book {
 	
 	boolean existAthor() {
 		return this.author != null;
-	}
-	
-	public boolean applyDiscount(double percentage) {
-		if (percentage > 0.3) {
-			return false;
-		} 
-		
-		System.out.println("Aplicando desconto Livro!");
-		this.price -= this.price * percentage;
-		
-		return false;
 	}
 }

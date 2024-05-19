@@ -22,7 +22,14 @@ public class Ebook extends Book {
 			return false;
 		}
 		
+		double discount = getPrice() * percentage;
+		setPrice(getPrice() - discount);
+		
 		System.out.println("Aplicando desconto no Ebook!");
-		return super.applyDiscount(percentage);
+		
+		return true;
+		
+		//System.out.println("Aplicando desconto no Ebook!");
+		//return super.applyDiscount(percentage);
 	}	
 }

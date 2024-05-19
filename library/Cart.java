@@ -4,11 +4,10 @@ public class Cart {
 	
 	private double total;
 	
-	public void addCompras(Book book) {
-		System.out.println("Adicionando: " + book);
+	public void addCompras(Product product) {
+		System.out.println("Adicionando: " + product);
 		
-		book.applyDiscount(0.5);
-		total += book.getPrice();
+		total += product.getPrice();
 	}
 	
 	public double getTotal() {
