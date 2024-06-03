@@ -1,4 +1,6 @@
-package library;
+package br.com.library;
+
+import br.com.library.product.Product;
 
 public class Cart {
 	

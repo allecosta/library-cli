@@ -1,4 +1,4 @@
-package library;
+package br.com.library.product;
 
 public interface Product {
 	

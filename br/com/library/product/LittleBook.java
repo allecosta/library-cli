@@ -1,4 +1,6 @@
-package library;
+package br.com.library.product;
+
+import br.com.library.Author;
 
 public class LittleBook extends Book {
 	

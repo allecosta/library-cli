@@ -1,4 +1,4 @@
-package library;
+package br.com.library.product;
 
 public abstract class Book implements Product {
 	
@@ -12,8 +12,6 @@ public abstract class Book implements Product {
 		this.isbn = "000-00-00000-00-0";
 		//this.printed = true;
 	}
-	
-	public abstract boolean applyDiscount(double percentage);
 	
 	public double getPrice() {
 		return price;
@@ -56,7 +54,7 @@ public abstract class Book implements Product {
 		this.author = author;
 	}
 
-	void detailsBook() {
+	public void detailsBook() {
 		System.out.println("\n\tDETALHES DO LIVRO:");
 		System.out.println("Nome: " + name);
 		System.out.println("Descrição: " + description);

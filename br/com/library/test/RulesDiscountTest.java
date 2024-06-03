@@ -1,6 +1,6 @@
-package library;
+package br.com.library.test;
 
-public class RulesDiscount {
+public class RulesDiscountTest {
 	
 	public static void main(String[] args) {
 		

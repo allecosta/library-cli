@@ -1,6 +1,6 @@
-package library;
+package br.com.library.test;
 
-public class SalesRegister {
+public class SalesRegisterTest {
 	
 	public static void main(String[] args) {
 		

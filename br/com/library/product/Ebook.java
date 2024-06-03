@@ -1,6 +1,6 @@
-package library;
+package br.com.library.product;
 
-public class Ebook extends Book {
+public class Ebook extends Book implements Promotional {
 	
 	private String waterMark;
 	

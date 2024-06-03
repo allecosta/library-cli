@@ -1,6 +1,6 @@
-package library;
+package br.com.library.product;
 
-public class Magazine implements Product {
+public class Magazine implements Product, Promotional {
 	
 	private String name, description;
 	private double price;
@@ -16,5 +16,4 @@ public class Magazine implements Product {
 		
 		return true;
 	}
-
 }

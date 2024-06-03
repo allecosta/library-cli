@@ -1,6 +1,8 @@
-package library;
+package br.com.library.product;
 
-public class PhysicalBook extends Book {
+import br.com.library.Author;
+
+public class PhysicalBook extends Book implements Promotional {
 	
 	public PhysicalBook(Author author) {
 		super(author);

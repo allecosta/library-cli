@@ -1,6 +1,6 @@
-package library;
+package br.com.library.test;
 
-public class CalculatorStock {
+public class CalculatorStockTest {
 	
 	public static void main(String[] args) {
 		

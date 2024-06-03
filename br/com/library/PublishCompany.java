@@ -1,4 +1,4 @@
-package library;
+package br.com.library;
 
 public class PublishCompany {
 

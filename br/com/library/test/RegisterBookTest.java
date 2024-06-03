@@ -1,6 +1,9 @@
-package library;
+package br.com.library.test;
 
-public class RegisterBook {
+import br.com.library.Author;
+import br.com.library.product.*;
+
+public class RegisterBookTest {
 	
 	public static void main(String[] args) {
 		
