@@ -1,5 +1,7 @@
 package br.com.library.product;
 
+import br.com.library.PublishCompany;
+
 public class Magazine implements Product, Promotional {
 	
 	private String name, description;

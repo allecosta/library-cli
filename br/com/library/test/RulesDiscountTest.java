@@ -1,5 +1,8 @@
 package br.com.library.test;
 
+import br.com.library.Author;
+import br.com.library.product.*;
+
 public class RulesDiscountTest {
 	
 	public static void main(String[] args) {

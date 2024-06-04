@@ -28,7 +28,7 @@ public class Author {
 		this.email = email;
 	}
 
-	void detailsAuthor() {
+	public void detailsAuthor() {
 		System.out.println("Autor: " + name);
 		System.out.println("CPF: " + cpf);
 		System.out.println("E-mail: " + email);

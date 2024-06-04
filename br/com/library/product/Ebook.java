@@ -1,5 +1,7 @@
 package br.com.library.product;
 
+import br.com.library.Author;
+
 public class Ebook extends Book implements Promotional {
 	
 	private String waterMark;

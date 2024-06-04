@@ -8,8 +8,9 @@ public class LittleBook extends Book {
 		super(author);
 	}
 	
+	/*
 	@Override
 	public boolean applyDiscount(double percentage) {
 		return false;
-	}
+	}*/
 }

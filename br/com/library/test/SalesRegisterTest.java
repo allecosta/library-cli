@@ -1,5 +1,8 @@
 package br.com.library.test;
 
+import br.com.library.*;
+import br.com.library.product.*;
+
 public class SalesRegisterTest {
 	
 	public static void main(String[] args) {

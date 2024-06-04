@@ -1,5 +1,7 @@
 package br.com.library.product;
 
+import br.com.library.Author;
+
 public abstract class Book implements Product {
 	
 	private String name, description, isbn;
