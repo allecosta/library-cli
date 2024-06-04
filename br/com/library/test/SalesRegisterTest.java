@@ -23,6 +23,8 @@ public class SalesRegisterTest {
 		cart.addCompras(physic);
 		cart.addCompras(ebook);
 		
+		Product[] products = cart.getProducts();
+		
 		System.out.println("Total: " + cart.getTotal());
 	}
 }
