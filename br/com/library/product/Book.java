@@ -10,6 +10,10 @@ public abstract class Book implements Product {
 	//private boolean printed;
 	
 	public Book(Author author) {
+		if (author == null) {
+			throw new RuntimeException("Todo livro existe um autor. Este campo não poder ser nulo!");
+		}
+		
 		this.author = author;
 		this.isbn = "000-00-00000-00-0";
 		//this.printed = true;

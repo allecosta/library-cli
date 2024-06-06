@@ -5,13 +5,13 @@ import br.com.library.product.Product;
 public class Cart {
 	
 	private double total;
-	private Product[] product = new Product[10];
+	private Product[] products = new Product[10];
 	private int cont = 0;
 	
 	public void addCompras(Product product) {
 		System.out.println("Adicionando: " + product);
 		
-		this.product[cont] = product;
+		this.products[cont] = product;
 		cont++;
 		
 		this.total += product.getPrice();

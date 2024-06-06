@@ -23,7 +23,13 @@ public class SalesRegisterTest {
 		cart.addCompras(physic);
 		cart.addCompras(ebook);
 		
-		Product[] products = cart.getProducts();
+		/*Product[] products = cart.getProducts();
+		
+		for (Product product : products) {	
+			if (product != null) {
+				System.out.println(product.getPrice());
+			}	
+		}*/
 		
 		System.out.println("Total: " + cart.getTotal());
 	}
