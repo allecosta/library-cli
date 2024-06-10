@@ -10,7 +10,7 @@ public class RulesDiscountTest {
 		Author author = new Author();
 		author.setName("Neil Gaiman");
 		
-		Book book = new LittleBook(author);
+		PhysicalBook book = new PhysicalBook(author);
 		book.setPrice(25.80);
 		
 		if (!book.applyDiscount(0.3)) {

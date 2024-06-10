@@ -2,22 +2,30 @@ package br.com.library;
 
 import br.com.library.product.Product;
 
+import java.util.ArrayList;
+
 public class Cart {
 	
 	private double total;
-	private Product[] products = new Product[10];
-	private int cont = 0;
-	
+	private ArrayList<Product> products;
+
+	public Cart(Product[] products) {
+		this.products = new ArrayList<Product>();
+	}
+
 	public void addCompras(Product product) {
-		System.out.println("Adicionando: " + product);
-		
-		this.products[cont] = product;
-		cont++;
-		
-		this.total += product.getPrice();
+		this.products.add(product);
+	}
+
+	public void remove(int position) {
+		this.products.remove(position);
 	}
 	
 	public double getTotal() {
 		return total;
+	}
+
+	public ArrayList<Product> getProducts() {
+		return products;
 	}
 }

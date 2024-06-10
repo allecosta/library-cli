@@ -3,6 +3,8 @@ package br.com.library.test;
 import br.com.library.*;
 import br.com.library.product.*;
 
+import java.util.List;
+
 public class SalesRegisterTest {
 	
 	public static void main(String[] args) {
@@ -18,18 +20,16 @@ public class SalesRegisterTest {
 		ebook.setName("A hora da Estrela");
 		ebook.setPrice(30.00);
 		
-		Cart cart = new Cart();
+		Cart cart = new Cart(new Product[10]);
 		
 		cart.addCompras(physic);
 		cart.addCompras(ebook);
 		
-		/*Product[] products = cart.getProducts();
+		List<Product> products = cart.getProducts();
 		
 		for (Product product : products) {	
-			if (product != null) {
-				System.out.println(product.getPrice());
-			}	
-		}*/
+			System.out.println(product);
+		}
 		
 		System.out.println("Total: " + cart.getTotal());
 	}
