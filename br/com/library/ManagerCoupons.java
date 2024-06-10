@@ -1,21 +1,21 @@
 package br.com.library;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
+import java.util.*;
 
 public class ManagerCoupons {
 
-    private Set<String> coupons;
+    private Map<String, Double> coupons;
 
     public ManagerCoupons() {
-        this.coupons = new HashSet<String>();
+        this.coupons = new HashMap<>();
 
-        coupons.addAll(Arrays.asList("CUP100, CUP250, CUP110, CUP170, CUP20, CUP10"));
+        coupons.put("CUP100", 20.00);
+        coupons.put("CUP250", 22.00);
+        coupons.put("CUP110", 16.00);
+        coupons.put("CUP17", 14.00);
     }
 
-    public boolean validationCoupons(String coupons) {
-        return this.coupons.contains(coupons);
+    public Double validationCoupons(String coupons) {
+        return this.coupons.get(coupons);
     }
 }
