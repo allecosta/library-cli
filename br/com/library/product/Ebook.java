@@ -20,7 +20,7 @@ public class Ebook extends Book implements Promotional {
 	
 	@Override
 	public boolean applyDiscount(double percentage) {
-		if (percentage > 0.15) {
+		if (percentage > 0.1) {
 			return false;
 		}
 		
@@ -30,8 +30,5 @@ public class Ebook extends Book implements Promotional {
 		System.out.println("Aplicando desconto no Ebook!");
 		
 		return true;
-		
-		//System.out.println("Aplicando desconto no Ebook!");
-		//return super.applyDiscount(percentage);
 	}	
 }

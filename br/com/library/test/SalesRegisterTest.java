@@ -20,7 +20,7 @@ public class SalesRegisterTest {
 		ebook.setName("A hora da Estrela");
 		ebook.setPrice(30.00);
 		
-		Cart cart = new Cart(new Product[10]);
+		Cart cart = new Cart();
 		
 		cart.addCompras(physic);
 		cart.addCompras(ebook);

@@ -3,17 +3,18 @@ package br.com.library;
 import br.com.library.product.Product;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Cart {
 	
 	private double total;
-	private ArrayList<Product> products;
+	private List<Product> products;
 
-	public Cart(Product[] products) {
-		this.products = new ArrayList<Product>();
+	public Cart() {
+		this.products = new ArrayList<>();
 	}
 
-	public void addCompras(Product product) {
+    public void addCompras(Product product) {
 		this.products.add(product);
 	}
 
@@ -25,7 +26,7 @@ public class Cart {
 		return total;
 	}
 
-	public ArrayList<Product> getProducts() {
+	public List<Product> getProducts() {
 		return products;
 	}
 }

@@ -11,7 +11,8 @@ public class PhysicalBook extends Book implements Promotional {
 	public double getPrinting() {
 		return this.getPrice() * 0.05;
 	}
-	
+
+	@Override
 	public boolean applyDiscount(double percentage) {
 		if (percentage > 0.3) {
 			return false;

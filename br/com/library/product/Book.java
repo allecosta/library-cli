@@ -7,7 +7,6 @@ public abstract class Book implements Product {
 	private String name, description, isbn;
 	private double price;
 	private Author author;
-	//private boolean printed;
 	
 	public Book(Author author) {
 		if (author == null) {
@@ -16,21 +15,8 @@ public abstract class Book implements Product {
 
 		this.author = author;
 		this.isbn = "000-00-00000-00-0";
-		//this.printed = true;
 	}
-	@Override
-	public int compareTo(Product another) {
-		if (this.getPrice() < another.getPrice()) {
-			return -1;
-		}
 
-		if (this.getPrice() > another.getPrice()) {
-			return 1;
-		}
-
-		return 0;
-	}
-	
 	public double getPrice() {
 		return price;
 	}
@@ -38,8 +24,7 @@ public abstract class Book implements Product {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
-	
+
 	public String getName() {
 		return name;
 	}
@@ -79,14 +64,27 @@ public abstract class Book implements Product {
 		System.out.println("ISBN: " + isbn);
 		System.out.println("Preço: " + price);
 		
-		if (this.existAthor()) {
+		if (this.existAuthor()) {
 			author.detailsAuthor();
 		}
 		
 		System.out.println("---");
 	}
 	
-	boolean existAthor() {
+	boolean existAuthor() {
 		return this.author != null;
+	}
+
+	@Override
+	public int compareTo(Product another) {
+		if (this.getPrice() < another.getPrice()) {
+			return -1;
+		}
+
+		if (this.getPrice() > another.getPrice()) {
+			return 1;
+		}
+
+		return 0;
 	}
 }

@@ -40,6 +40,7 @@ public class Magazine implements Product, Promotional {
 		this.publishCompany = publishCompany;
 	}
 
+	@Override
 	public boolean applyDiscount(double percentage) {
 		if (percentage > 0.1) {
 			return false;
