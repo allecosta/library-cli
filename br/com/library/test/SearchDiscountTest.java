@@ -2,7 +2,7 @@ package br.com.library.test;
 
 import br.com.library.ManagerCoupons;
 
-public class SearchDiscount {
+public class SearchDiscountTest {
 
     public static void main(String[] args) {
 
