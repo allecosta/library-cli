@@ -29,5 +29,9 @@ public class RegisterBookTest {
 		book2.setAuthor(author);
 		
 		book2.detailsBook();
+
+		double totalPrice = book.getPrice() + book2.getPrice();
+
+		System.out.println("\nValor total R$ " + totalPrice);
 	}
 }
